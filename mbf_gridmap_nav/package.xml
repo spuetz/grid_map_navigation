@@ -1,0 +1,53 @@
+<package>
+    <name>mbf_gridmap_nav</name>
+    <version>0.0.0</version>
+    <description>
+        The mbf_gridmap_nav package contains the gridmap navigation server implementation
+        of Move Base Flex (MBF). The gridmap navigation server is bound to the
+        <a href="wiki.ros.org/grid_map">grid_map</a> representation. It provides
+        the Actions for planning, controlling and recovering. At the time of start MBF
+        loads all defined plugins. Therefor, it loads all plugins which are defined in
+        the lists *planners*, *controllers* and *recovery_behaviors*. Each list holds
+        a pair of a *name* and a *type*. The *type* defines which kind of plugin to
+        load. The *name* defines under which name the plugin should be callable by
+        the actions.
+    </description>
+    <url>http://wiki.ros.org/move_base_flex</url>
+    <author email="hjanott@uos.de">Hannes Janott</author>
+    <author email="spuetz@uos.de">Sebastian Pütz</author>
+    <maintainer email="spuetz@uos.de">Sebastian Pütz</maintainer>
+    <maintainer email="santos@magazino.eu">Jorge Santos</maintainer>
+    <license>3-Clause BSD</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <build_depend>tf2_ros</build_depend>
+    <build_depend>tf2</build_depend>
+    <build_depend>tf2_geometry_msgs</build_depend>
+    <build_depend>dynamic_reconfigure</build_depend>
+    <build_depend>grid_map_core</build_depend>
+    <build_depend>mbf_abstract_nav</build_depend>
+    <build_depend>mbf_gridmap_core</build_depend>
+    <build_depend>grid_map_handler</build_depend>
+    <build_depend>mbf_msgs</build_depend>
+    <build_depend>mbf_utility</build_depend>
+    <build_depend>nav_msgs</build_depend>
+    <build_depend>geometry_msgs</build_depend>
+
+    <run_depend>tf2_ros</run_depend>
+    <run_depend>tf2</run_depend>
+    <run_depend>tf2_geometry_msgs</run_depend>
+    <run_depend>dynamic_reconfigure</run_depend>
+    <run_depend>grid_map_core</run_depend>
+    <run_depend>mbf_abstract_nav</run_depend>
+    <run_depend>mbf_gridmap_core</run_depend>
+    <run_depend>grid_map_handler</run_depend>
+    <run_depend>mbf_msgs</run_depend>
+    <run_depend>mbf_utility</run_depend>
+    <run_depend>nav_msgs</run_depend>
+    <run_depend>geometry_msgs</run_depend>
+
+    <export>
+      <rosdoc config="rosdoc.yaml" />
+    </export>
+</package>

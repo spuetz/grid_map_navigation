@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>mbf_gridmap_core</name>
+  <version>0.0.0</version>
+  <description>The mbf_gridmap_core package</description>
+
+  <maintainer email="spuetz@uos.de">Sebastian Pütz</maintainer>
+
+  <license>BSD</license>
+  <url type="website">http://wiki.ros.org/move_base_flex/mbf_gridmap_core</url>
+
+  <author email="hjanott@uos.de">Hannes Janott</author>
+  <author email="spuetz@uos.de">Sebastian Pütz</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>grid_map_core</build_depend>
+  <build_depend>mbf_abstract_core</build_depend>
+
+  <build_export_depend>grid_map_core</build_export_depend>
+  <build_export_depend>mbf_abstract_core</build_export_depend>
+
+  <exec_depend>grid_map_core</exec_depend>
+  <exec_depend>mbf_abstract_core</exec_depend>
+
+</package>
